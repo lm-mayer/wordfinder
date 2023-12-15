@@ -1,10 +1,5 @@
-#test code for homework
-#search abstracts for important research terms ("influenza" in this case)
-#for rubric we need
-    #decision, loop, and something to graph at the end
-
-
-
+#test code for homework: search abstracts for important research terms ("influenza" in this case)
+#we can use basically any text or search terms - this is just my go-to topic for testing stuff
 
 #implementation would be adding a .txt file (or a couple) to the GitHub, which we can read in here. If multiple, can add a loop through files, but might make our code too long
 
