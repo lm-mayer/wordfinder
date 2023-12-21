@@ -7,6 +7,7 @@
 from fileinput import filename
 import sys
 import matplotlib.pyplot as plt 
+import numpy as np
 
 def alphanumeric(string):
     return "".join(ch for ch in string if ch.isalnum())
@@ -46,8 +47,8 @@ def main(input_file): #added explict variable in place of sys.argv[1], but could
     print("\n=> Preparing Request")
 
     #make visual if yes - bar chart of word counts
-    words = list(term_dict.keys())
-    counts = list(term_dict.values())
+    words = np.array(list(term_dict.keys())) #array required for full points
+    counts = np.array(list(term_dict.values()))
     
     plt.bar(words, counts)
     plt.xlabel('Words')
