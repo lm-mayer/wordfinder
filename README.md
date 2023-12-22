@@ -2,10 +2,10 @@ README for "wordfinder" program
 Description: Searching and Visualizing Terms in Text Documents
 Authors: Lisa Mayer and Peyton Tvrdy
 For: University of Vienna Data Stewardship Course, Module 2.7
-Date: December 20th, 2023
+Date: December 21st, 2023
 
 ----------------------------------------------------------------
-SUMMARY OF PROGRAM
+# SUMMARY OF PROGRAM
 ----------------------------------------------------------------
 
 This program takes text files, counts the frequency of certain words, and visualizes them on a plot. 
@@ -13,29 +13,30 @@ This program can read any text files and search for any word(s) or number(s) the
 The program can search for as many search terms as the user desires. The program accounts for non-
 alphanumeric characters and capitalization. After searching the document for the requested terms, the 
 program returns a total count for each search term. The program then optionally offers to visualize 
-the word counts on a plot.
+the word counts on a bar chart.
 
 
 ----------------------------------------------------------------
-TABLE OF CONTENTS
+# TABLE OF CONTENTS
 ----------------------------------------------------------------
 
 A. General Information
-B. Sharing/Access & Policies Information
-C. Data and Related File Overview
-D. Data-Specific Information for: [dataset title here]
-E. Update Log
+B. Quickstart & Use Cases
+C. Sharing/Access & Policies Information
+D. Data and Related File Overview
+E. Data-Specific Information for: [dataset title here]
+F. Update Log
 
 
 
 ----------------------------------------------------------------
-A. GENERAL INFORMATION
+# A. GENERAL INFORMATION
 ----------------------------------------------------------------
 
-0. Title of Program: Wordfinder 
+0. **Title of Program:** Wordfinder 
    
 
-1. Description of Program: This program takes text files, counts the frequency of 
+1. **Description of Program:** This program takes text files, counts the frequency of 
 certain words, and visualizes them on a plot. This program can read any text files 
 and search for any word(s) or number(s) the user is looking for. The program can 
 search for as many search terms as the user desires. The program accounts for non-
@@ -44,14 +45,14 @@ requested terms, the program returns a total count for each search term. The pro
 then optionally offers to visualize the word counts on a plot.
    
 
-2. Github Links: https://github.com/lm-mayer/wordfinder; 
+2. **Github Links:** https://github.com/lm-mayer/wordfinder; 
        
 
 
-3. Authorship Information: 
+3. **Authorship Information:** 
         Name: Lisa Mayer
            Institution: National Institutes of Health
-           Email: 
+           Email: lisa.mayer@nih.gov
 		   ORCID: https://orcid.org/0000-0001-8499-3043
 
         Name: Peyton Tvrdy
@@ -62,12 +63,51 @@ then optionally offers to visualize the word counts on a plot.
 
 4. Date of upload: December 20, 2023   
 
+----------------------------------------------------------------
+# B. Quickstart & Use Cases
+----------------------------------------------------------------
+**Quickstart**
+1. Run wordfinder from any command line interface and specify path to text file for review.
+```bash
+python wordfinder.py input_file.txt
+```
+
+2. Specify search term(s) to match throughout the file. Separate multiple terms with commas. Counts of each will be returned in the command line interface.
+
+3.  If you would like a visualization, respond "Y" when prompted. A bar chart of words and counts will pop up in a new window. If not, respont "N" to complete and close the program.
+
+**Use Case: Quickly check if abstracts have relevant key words**
+With the modern pace of publishing, staying up-to-date on any research area can be difficult and time consuming. Wordfinder mitigates this by allowing users to quickly check whether key words are present and get an overview of a publication's contents without reading the whole document. Then, the user can decide to only read publications where keywords are present to a certain degree, saving them time.
+
+Note: follow along with this example with file in this repo 'Example Abstract Annual report on surveillance for avian influenza in poultry and wild birds in Member States of the European Union.txt'
+
+For example, a researcher focused on zoonotic epidemiology is interested in influenza surveillance in wild animals around the world. They identified a publication that sounds relevant, but they want to make sure before reading since the PDF is 60 pages long! The researcher uses wordfinder:
+ ```bash
+ python wordfinder.py 'Example Abstract Annual report on surveillance for avian influenza in poultry and wild birds in Member States of the European Union.txt'
+
+ Please enter the terms you would like to search this document for: 
+ ```
+They type keywords relevant to their research question. 
+
+```bash
+Please enter the terms you would like to search this document for: influenza, wild, surveillance, positive
+
+=> Starting File Read: 'Example Abstract Annual report on surveillance for avian influenza in poultry and wild birds in Member States of the European Union.txt'
+
+Term count:  {'influenza': 10, 'wild': 8, 'surveillance': 5, 'positive': 8}
+
+=> Would you like a visualization of your terms' frequency? [Y/N]:
+```
+At this prompt, they answer "Y" and get this graph: /n
+![graph of flu word counts](URL - once it's in the final location in GitHub)
+
+The researcher is encouraged by the number of times their keywords occurred and verifies they do occur this much in the abstract. They read the article, which helps them understand more about their research landscape, and did not waste time reading something irrelevant.
 
 ----------------------------------------------------------------
-B. SHARING/ACCESS & POLICIES INFORMATION 
+# C. SHARING/ACCESS & POLICIES INFORMATION 
 ----------------------------------------------------------------
 
-0. Recommended citation for the program:
+0. **Recommended citation for the program:**
 
 Mayer, Lisa, and Peyton Tvrdy (2023). "Wordfinder". https://github.com/lm-mayer/wordfinder
 
@@ -76,10 +116,10 @@ Mayer, Lisa, and Peyton Tvrdy (2023). "Wordfinder". https://github.com/lm-mayer/
    
 
 ----------------------------------------------------------------
-C. DATA & RELATED FILE OVERVIEW
+# D. DATA & RELATED FILE OVERVIEW
 ----------------------------------------------------------------
 
-1. File List for the wordfinder.zip collection      
+1. **File List for the wordfinder.zip collection**   
         
    A. Filename: README.md
           
@@ -107,16 +147,17 @@ C. DATA & RELATED FILE OVERVIEW
         
 
 ----------------------------------------------------------------
-D. DATA-SPECIFIC INFORMATION  
+# E. DATA-SPECIFIC INFORMATION  
 ----------------------------------------------------------------
 
 Required Programs: python v. 3.0 or above, standard text editor such as Notepad++
 
 
 ----------------------------------------------------------------
-E. UPDATE LOG
+# F. UPDATE LOG
 ----------------------------------------------------------------
 
 This README.md file was originally created on 2023-12-18 by Peyton Tvrdy and Lisa Mayer.
 
 2023-12-18: Original file created
+2023-12-21: File updated with examples and more details

@@ -1,16 +1,18 @@
 #Title: Searching and Visualizing Terms in Text Documents
 #Authors: Lisa Mayer and Peyton Tvrdy
 #For: University of Vienna Data Stewardship Course, Module 2.7
-#Date: December 20th, 2023
+#Date: December 21th, 2023
 #For more information on this script and how to use it, please read the document "README.md"
 
 from fileinput import filename
 import sys
+import matplotlib.pyplot as plt 
+import numpy as np
 
 def alphanumeric(string):
     return "".join(ch for ch in string if ch.isalnum())
 
-def main():
+def main(input_file): #added explict variable in place of sys.argv[1], but could roll back
 
     if len(sys.argv) != 2:
         print()
@@ -20,9 +22,10 @@ def main():
     print()        
     term_dict = {alphanumeric(str(item).lower()): 0 for item in input("Please enter the terms you would like to search this document for: ").split()}
     
-    print("\n=> Starting File Read: %s\n" % sys.argv[1])
-    fp = open(sys.argv[1], 'r', encoding='utf-8')
+    print("\n=> Starting File Read: %s\n" % input_file)
+    fp = open(input_file, 'r', encoding='utf-8')
     
+    #read lines and store word counts in term_dict
     with fp:
         for line in fp.readlines():
             words = line.lower().split()
@@ -33,13 +36,28 @@ def main():
     
     fp.close()
     print("Term count: ", term_dict)
-    should_continue = input("\n=> Would you like a visualization of your terms' frequency? [y/N]: ").upper() == 'Y'
+    
+    #prompt for visualization
+    should_continue = input("\n=> Would you like a visualization of your terms' frequency? [Y/N]: ").upper() == 'Y'
 
     if not should_continue:
         print("=> Done !")
         sys.exit(0)
 
     print("\n=> Preparing Request")
+
+    #make visual if yes - bar chart of word counts
+    words = np.array(list(term_dict.keys())) #array required for full points
+    counts = np.array(list(term_dict.values()))
     
+    plt.bar(words, counts)
+    plt.xlabel('Words')
+    plt.ylabel('Count')
+    plt.title('Word Frequency')
+
+    plt.show()
+
+
 if __name__ == '__main__':
-	main()
+    input_file=sys.argv[1]
+    main(input_file)
