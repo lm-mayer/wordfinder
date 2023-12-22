@@ -1,8 +1,8 @@
-README for "wordfinder" program
-Description: Searching and Visualizing Terms in Text Documents
-Authors: Lisa Mayer and Peyton Tvrdy
-For: University of Vienna Data Stewardship Course, Module 2.7
-Date: December 21st, 2023
+README for "wordfinder" program <br>
+Description: Searching and Visualizing Terms in Text Documents <br>
+Authors: Lisa Mayer and Peyton Tvrdy <br>
+For: University of Vienna Data Stewardship Course, Module 2.7 <br>
+Date: December 21st, 2023 <br>
 
 ----------------------------------------------------------------
 # SUMMARY OF PROGRAM
@@ -98,8 +98,8 @@ Term count:  {'influenza': 10, 'wild': 8, 'surveillance': 5, 'positive': 8}
 
 => Would you like a visualization of your terms' frequency? [Y/N]:
 ```
-At this prompt, they answer "Y" and get this graph: /n
-![graph of flu word counts](URL - once it's in the final location in GitHub)
+At this prompt, they answer "Y" and get this graph: <br>
+![graph of flu word counts](https://github.com/lm-mayer/wordfinder/blob/main/flu_abstract_ex_graph.png)
 
 The researcher is encouraged by the number of times their keywords occurred and verifies they do occur this much in the abstract. They read the article, which helps them understand more about their research landscape, and did not waste time reading something irrelevant.
 
@@ -157,7 +157,7 @@ Required Programs: python v. 3.0 or above, standard text editor such as Notepad+
 # F. UPDATE LOG
 ----------------------------------------------------------------
 
-This README.md file was originally created on 2023-12-18 by Peyton Tvrdy and Lisa Mayer.
-
-2023-12-18: Original file created
+This README.md file was originally created on 2023-12-18 by Peyton Tvrdy and Lisa Mayer. 
+<br>
+2023-12-18: Original file created <br>
 2023-12-21: File updated with examples and more details
