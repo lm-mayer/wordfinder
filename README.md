@@ -55,13 +55,13 @@ then optionally offers to visualize the word counts on a plot.
            Email: lisa.mayer@nih.gov
 		   ORCID: https://orcid.org/0000-0001-8499-3043
 
-        Name: Peyton Tvrdy
+   	Name: Peyton Tvrdy
            Institution: National Transportation Library. US Department of Transportation
            Email: peyton.tvrdy.ctr@dot.gov
 		   ORCID: https://orcid.org/0000-0002-9720-4725
 	   
 
-4. Date of upload: December 20, 2023   
+5. Date of upload: December 20, 2023   
 
 ----------------------------------------------------------------
 # B. Quickstart & Use Cases
