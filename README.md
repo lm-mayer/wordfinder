@@ -54,7 +54,6 @@ then optionally offers to visualize the word counts on a plot.
            Institution: National Institutes of Health
            Email: lisa.mayer@nih.gov
 		   ORCID: https://orcid.org/0000-0001-8499-3043
-
         Name: Peyton Tvrdy
            Institution: National Transportation Library. US Department of Transportation
            Email: peyton.tvrdy.ctr@dot.gov
@@ -161,3 +160,4 @@ This README.md file was originally created on 2023-12-18 by Peyton Tvrdy and Lis
 <br>
 2023-12-18: Original file created <br>
 2023-12-21: File updated with examples and more details
+2024-01-02: Slight changes made to file spacing
