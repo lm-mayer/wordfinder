@@ -4,6 +4,7 @@ Authors: Lisa Mayer and Peyton Tvrdy <br>
 For: University of Vienna Data Stewardship Course, Module 2.7 <br>
 Date: December 21st, 2023 <br>
 
+[![DOI](https://zenodo.org/badge/732012808.svg)](https://zenodo.org/doi/10.5281/zenodo.10501352)
 ----------------------------------------------------------------
 # SUMMARY OF PROGRAM
 ----------------------------------------------------------------
